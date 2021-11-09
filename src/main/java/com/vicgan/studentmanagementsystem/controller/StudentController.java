@@ -20,7 +20,7 @@ public class StudentController {
     @GetMapping("/students")
     public String listStudents(Model model){
         model.addAttribute("students", studentService.getAllStudents());
-        // return te view
+        // return the view
         // NB : view is created as students.html in the template folder which will automatically detected
         return "students";
     }
